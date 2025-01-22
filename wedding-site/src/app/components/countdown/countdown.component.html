@@ -1,0 +1,27 @@
+<div
+  class="bg-cream p-6 rounded-lg shadow-lg max-w-lg mx-auto text-center animate-fade-in"
+>
+  <h2 class="text-2xl font-heading text-olive mb-6">Wedding Countdown</h2>
+  <div class="flex justify-center items-center space-x-4">
+    <div class="bg-lightOlive text-cream p-4 rounded-lg shadow-md">
+      <div class="text-xl font-bold">{{ timeRemaining.days }}</div>
+      <div class="text-sm">Days</div>
+    </div>
+    <div class="bg-lightOlive text-cream p-4 rounded-lg shadow-md">
+      <div class="text-xl font-bold">{{ timeRemaining.hours }}</div>
+      <div class="text-sm">Hours</div>
+    </div>
+    <div class="bg-lightOlive text-cream p-4 rounded-lg shadow-md">
+      <div class="text-xl font-bold">{{ timeRemaining.minutes }}</div>
+      <div class="text-sm">Minutes</div>
+    </div>
+    <div class="bg-lightOlive text-cream p-4 rounded-lg shadow-md">
+      <div class="text-xl font-bold">{{ timeRemaining.seconds }}</div>
+      <div class="text-sm">Seconds</div>
+    </div>
+  </div>
+
+  <div class="mt-6 text-lg font-heading text-olive">
+    <p>Time left until the big day!</p>
+  </div>
+</div>

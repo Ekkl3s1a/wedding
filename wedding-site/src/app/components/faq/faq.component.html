@@ -1,0 +1,60 @@
+<div
+  class="bg-cream p-6 rounded-lg shadow-lg max-w-3xl mx-auto animate-fade-in"
+>
+  <h2 class="text-3xl font-heading font-bold text-olive text-center mb-8">
+    Frequently Asked Questions
+  </h2>
+
+  <!-- FAQ List -->
+  <div class="space-y-4">
+    <div
+      *ngFor="let faq of faqs; let i = index"
+      class="bg-white rounded-lg shadow-md hover:shadow-lg transition duration-300"
+    >
+      <div
+        class="flex justify-between items-center p-4 cursor-pointer hover:bg-lightOlive transition duration-300"
+        (click)="toggleAnswer(i)"
+      >
+        <h3 class="text-xl font-heading text-olive">{{ faq.question }}</h3>
+        <svg
+          *ngIf="faq.isOpen"
+          class="w-6 h-6 text-olive transform rotate-180"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M19 9l-7 7-7-7"
+          />
+        </svg>
+        <svg
+          *ngIf="!faq.isOpen"
+          class="w-6 h-6 text-olive"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M19 15l-7-7-7 7"
+          />
+        </svg>
+      </div>
+
+      <!-- Answer Section -->
+      <div
+        *ngIf="faq.isOpen"
+        class="p-4 text-lg font-body text-gray-700 transition duration-300"
+      >
+        {{ faq.answer }}
+      </div>
+    </div>
+  </div>
+</div>

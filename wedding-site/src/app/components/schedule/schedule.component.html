@@ -1,0 +1,31 @@
+<div
+  class="bg-cream p-6 rounded-lg shadow-lg max-w-3xl mx-auto animate-fade-in"
+>
+  <h2 class="text-3xl font-heading font-bold text-olive text-center mb-8">
+    Wedding Schedule
+  </h2>
+
+  <!-- Schedule List -->
+  <div class="space-y-6">
+    <div
+      *ngFor="let event of weddingSchedule; let i = index"
+      class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition duration-300 animate-slide-up"
+    >
+      <div class="flex items-center space-x-4 mb-4">
+        <!-- Event Time -->
+        <div class="text-2xl font-bold text-olive">
+          {{ event.time }}
+        </div>
+        <div class="h-1 w-12 bg-olive"></div>
+      </div>
+
+      <!-- Event Title -->
+      <h3 class="text-xl font-heading font-semibold text-olive mb-2">
+        {{ event.event }}
+      </h3>
+
+      <!-- Event Description -->
+      <p class="text-lg font-body text-gray-700">{{ event.description }}</p>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,57 @@
+@keyframes slideUp {
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.animate-slide-up {
+  animation: slideUp 0.5s ease-out;
+}
+
+.bg-cream {
+  background-color: #fdf5e6;
+}
+
+.bg-olive {
+  background-color: #6b8e23;
+}
+
+.bg-white {
+  background-color: #ffffff;
+}
+
+h2 {
+  font-family: "Playfair Display", serif;
+  color: #6b8e23;
+}
+
+h3 {
+  font-family: "Playfair Display", serif;
+  color: #6b8e23;
+}
+
+p {
+  font-family: "Poppins", sans-serif;
+  color: #4a4a4a;
+}
+
+.space-y-6 > * + * {
+  margin-top: 1.5rem;
+}
+
+.hover\:shadow-lg:hover {
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+.hover\:scale-105:hover {
+  transform: scale(1.05);
+}

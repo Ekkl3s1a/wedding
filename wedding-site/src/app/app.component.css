@@ -1,0 +1,39 @@
+/* App Component Styles */
+main {
+  margin-bottom: 100px; /* Ensures footer is not overlapping */
+}
+
+.hero-section {
+  background-image: url('/src/assets/hero-bg.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+h1, h2, h3 {
+  font-family: 'Playfair Display', serif; /* Heading font */
+}
+
+p {
+  font-family: 'Poppins', sans-serif; /* Body text font */
+}
+
+section {
+  padding-bottom: 40px; /* Consistent padding for sections */
+}
+
+.bg-lightOlive {
+  background-color: #c5d6b8; /* Light Olive background */
+}
+
+/* Ensure sections don't overlap and maintain a clean look */
+section + section {
+  margin-top: 20px;
+}
+
+/* Improve spacing on smaller screens */
+@media (max-width: 768px) {
+  .py-16 {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+}
