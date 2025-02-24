@@ -1,29 +1,36 @@
 <!-- Sticky Navbar -->
-<nav class="bg-olive text-cream py-4 sticky top-0 z-50 shadow-md">
-  <ul class="flex justify-center space-x-6">
-    <li>
-      <a href="#welcome" class="hover:text-gold scroll-smooth">Welcome</a>
-    </li>
-    <li>
-      <a href="#calendar" class="hover:text-gold scroll-smooth">Calendar</a>
-    </li>
-    <li>
-      <a href="#gallery" class="hover:text-gold scroll-smooth">Gallery</a>
-    </li>
-    <li>
-      <a href="#schedule" class="hover:text-gold scroll-smooth">Schedule</a>
-    </li>
+<nav class="bg-cream text-olive py-4 sticky top-0 z-50 shadow-md">
+  <div class="flex items-center justify-between px-6">
+    <div class="text-xl font-bold">Wedding</div>
+    <button (click)="toggleMenu()" class="lg:hidden text-2xl">
+      <i class="fas fa-bars"></i>
+    </button>
+    <ul id="navbar-links" class="flex justify-center space-x-6 lg:flex hidden">
+      <li><a href="#welcome" class="hover:text-gold scroll-smooth">Welcome</a></li>
+      <li><a href="#calendar" class="hover:text-gold scroll-smooth">Calendar</a></li>
+      <li><a href="#gallery" class="hover:text-gold scroll-smooth">Gallery</a></li>
+      <li><a href="#schedule" class="hover:text-gold scroll-smooth">Schedule</a></li>
+      <li><a href="#map" class="hover:text-gold scroll-smooth">Map</a></li>
+      <li><a href="#countdown" class="hover:text-gold scroll-smooth">Countdown</a></li>
+      <li><a href="#faq" class="hover:text-gold scroll-smooth">FAQ</a></li>
+    </ul>
+  </div>
+
+  <!-- Mobile Navbar (Hidden by default) -->
+  <ul id="mobile-menu" [class.hidden]="!isMenuOpen" [class.block]="isMenuOpen" class="lg:hidden space-y-4 bg-cream px-6 py-4">
+    <li><a href="#welcome" class="hover:text-gold scroll-smooth">Welcome</a></li>
+    <li><a href="#calendar" class="hover:text-gold scroll-smooth">Calendar</a></li>
+    <li><a href="#gallery" class="hover:text-gold scroll-smooth">Gallery</a></li>
+    <li><a href="#schedule" class="hover:text-gold scroll-smooth">Schedule</a></li>
     <li><a href="#map" class="hover:text-gold scroll-smooth">Map</a></li>
-    <li>
-      <a href="#countdown" class="hover:text-gold scroll-smooth">Countdown</a>
-    </li>
+    <li><a href="#countdown" class="hover:text-gold scroll-smooth">Countdown</a></li>
     <li><a href="#faq" class="hover:text-gold scroll-smooth">FAQ</a></li>
   </ul>
 </nav>
 
 <main class="min-h-screen bg-cream">
   <!-- Welcome Section -->
-  <section id="welcome" class="hero-section text-center">
+  <section id="welcome" class="hero-section text-center py-16 px-6">
     <app-welcome></app-welcome>
   </section>
 
@@ -33,7 +40,7 @@
   </section>
 
   <!-- Gallery Section -->
-  <section id="gallery" class="py-16 px-6 bg-lightOlive">
+  <section id="gallery" class="py-16 px-6 bg-otherColors">
     <app-gallery></app-gallery>
   </section>
 
@@ -43,7 +50,7 @@
   </section>
 
   <!-- Map Section -->
-  <section id="map" class="py-16 px-6 bg-lightOlive">
+  <section id="map" class="py-16 px-6 bg-otherColors">
     <app-map></app-map>
   </section>
 
@@ -53,7 +60,7 @@
   </section>
 
   <!-- FAQ Section -->
-  <section id="faq" class="py-16 px-6 bg-lightOlive">
+  <section id="faq" class="py-16 px-6 bg-otherColors">
     <app-faq></app-faq>
   </section>
 </main>

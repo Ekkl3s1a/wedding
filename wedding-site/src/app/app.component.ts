@@ -15,6 +15,16 @@ import { FooterComponent } from './footer/footer.component';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
+  isMenuOpen = false;
+
+  ngOnInit(): void {
+    this.isMenuOpen = false;
+  }
+
+  toggleMenu() {
+    this.isMenuOpen = !this.isMenuOpen;
+  }
+
   @HostListener('window:scroll', [])
   onWindowScroll() {
     const button = document.getElementById('backToTop');

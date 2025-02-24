@@ -6,6 +6,7 @@ module.exports = {
       colors: {
         olive: "#6B8E23",
         lightOlive: "#A9BA9D",
+        otherColors: "#95ae8a",
         cream: "#FFFDF5",
         gold: "#D4AF37",
         blush: "#FAD6D6",
@@ -16,7 +17,8 @@ module.exports = {
       },
       backgroundImage: {
         "leaf-pattern": "url('/src/assets/olive-leaves-pattern.jpg')",
-        "hero-gradient": "linear-gradient(to bottom, #A9BA9D, #FFFDF5)",
+        "hero-gradient": "linear-gradient(to bottom, #436937, #A9BA9D)",
+        "hero-gradient-to-top": "linear-gradient(to bottom, #A9BA9D,rgb(20, 54, 10))",
       },
       animation: {
         "fade-in": "fadeIn 1s ease-in",

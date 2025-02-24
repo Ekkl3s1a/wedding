@@ -11,7 +11,7 @@ import { Component } from '@angular/core';
 export class GalleryComponent {
   images = [
     {
-      src: 'assets/images/image1.jpg',
+      src: 'assets/images/Foto.jpg',
       alt: 'Photo of the couple at the park',
     },
     {
@@ -25,14 +25,6 @@ export class GalleryComponent {
     {
       src: 'assets/images/image4.jpg',
       alt: 'Proposal moment in a romantic setting',
-    },
-    {
-      src: 'assets/images/image5.jpg',
-      alt: 'Couple at a wedding rehearsal dinner',
-    },
-    {
-      src: 'assets/images/image6.jpg',
-      alt: 'The couple with their families',
     },
   ];
 

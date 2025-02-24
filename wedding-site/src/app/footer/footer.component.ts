@@ -9,47 +9,25 @@ import { Component } from '@angular/core';
 })
 export class FooterComponent {
   brideContact = {
-    name: 'Jane Doe',
-    email: 'janedoe@example.com',
-    phone: '+1234567890',
+    name: 'Ana Cláudia Silva',
+    phone: '+351 913 766 919',
     social: [
       {
-        platform: 'Facebook',
-        url: 'https://facebook.com/janedoe',
-        icon: 'facebook',
-      },
-      {
         platform: 'Instagram',
-        url: 'https://instagram.com/janedoe',
+        url: 'https://www.instagram.com/anaclaudia.s99?igsh=MXNhMjJrbnVoNHppZw==',
         icon: 'instagram',
-      },
-      {
-        platform: 'Twitter',
-        url: 'https://twitter.com/janedoe',
-        icon: 'twitter',
       },
     ],
   };
 
   groomContact = {
-    name: 'John Smith',
-    email: 'johnsmith@example.com',
-    phone: '+0987654321',
+    name: 'Bruno Carvalho',
+    phone: '+351 937 108 092',
     social: [
       {
-        platform: 'Facebook',
-        url: 'https://facebook.com/johnsmith',
-        icon: 'facebook',
-      },
-      {
         platform: 'Instagram',
-        url: 'https://instagram.com/johnsmith',
+        url: 'https://www.instagram.com/brrnu0?igsh=MXh2eGxnMXJ4YzFyNw%3D%3D',
         icon: 'instagram',
-      },
-      {
-        platform: 'Twitter',
-        url: 'https://twitter.com/johnsmith',
-        icon: 'twitter',
       },
     ],
   };

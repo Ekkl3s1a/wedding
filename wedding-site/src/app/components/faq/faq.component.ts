@@ -11,32 +11,32 @@ import { Component } from '@angular/core';
 export class FaqComponent {
   faqs = [
     {
-      question: 'What is the dress code?',
+      question: 'Há algum dress code ?',
       answer:
-        'The dress code is semi-formal. Feel free to dress elegantly but comfortably!',
+        'Podes escolher a peça que quiseres. Temos apenas um pedido. A cor verde vai ser escolhida para pessoas específicas e por isso pedimos para que não uses nenhuma peça em tons verdes.',
       isOpen: false,
     },
     {
-      question: 'Where is the wedding venue?',
+      question: 'A que horas tenho de chegar ?',
       answer:
-        'The wedding will take place at the beautiful Green Meadows Resort, located in downtown.',
+        'A cerimónia é às 16 horas, por isso pedimos-te para que estejas na herdade às 15h30. Sabemos que há atrasos que fazem parte, e por essa razão pedimos para que venhas com tempo.',
       isOpen: false,
     },
     {
-      question: 'Can I bring a plus one?',
+      question: 'Até quando posso confirmar a minha presença ?',
       answer:
-        'Yes, you are welcome to bring a guest. Just be sure to RSVP in advance.',
+        'Tens até ao dia 9 de maio para confirmares. Pedimos-te para que nos contactes para um dos nossos números. Se tiveres alguma intolerância alimentar ou alergia a algum alimento avisa-nos também.',
       isOpen: false,
     },
     {
-      question: 'What time should I arrive?',
+      question: 'E presentes ? Como posso ajudar ?',
       answer:
-        'Please arrive by 3:30 PM for the ceremony, with the reception starting at 6:00 PM.',
+        'Se quiseres dar dinheiro podes enviar para um dos nossos contactos ou se preferires entregas no dia.',
       isOpen: false,
     },
     {
-      question: 'Is there parking available?',
-      answer: 'Yes, there is plenty of free parking at the venue.',
+      question: 'Existe estacionamento disponível?',
+      answer: 'Sim, há estacionamento gratuito no local do evento.',
       isOpen: false,
     },
   ];

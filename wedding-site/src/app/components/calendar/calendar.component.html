@@ -1,20 +1,20 @@
-<div class="bg-cream p-6 rounded-lg shadow-lg max-w-lg mx-auto animate-fade-in">
+<div class="bg-cream p-6 rounded-lg shadow-lg max-w-full sm:max-w-lg mx-auto animate-fade-in">
   <!-- Header: Wedding Month and Year -->
   <div class="flex justify-center items-center mb-4">
-    <h2 class="text-xl md:text-2xl font-heading text-olive">
+    <h2 class="text-xl sm:text-2xl font-heading font-bold text-olive">
       {{ formattedMonthYear }}
     </h2>
   </div>
 
   <!-- Days of the Week -->
-  <div class="grid grid-cols-7 text-center font-bold text-olive mb-2">
-    <div *ngFor="let day of ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']">
+  <div class="grid grid-cols-7 sm:grid-cols-7 md:grid-cols-7 lg:grid-cols-7 text-center font-bold text-olive mb-2">
+    <div *ngFor="let day of ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']" class="text-xs sm:text-sm md:text-base">
       {{ day }}
     </div>
   </div>
 
   <!-- Calendar Days -->
-  <div class="grid grid-cols-7 gap-2">
+  <div class="grid grid-cols-7 sm:grid-cols-7 md:grid-cols-7 lg:grid-cols-7 gap-2">
     <!-- Empty slots for days before the start of the month -->
     <div *ngFor="let empty of emptySlots" class="p-4 bg-transparent"></div>
 
@@ -28,14 +28,14 @@
         "
         [attr.title]="isWeddingDay(day) ? 'Wedding Day!' : ''"
       >
-        <span class="font-bold">{{ day }}</span>
+        <span class="font-bold text-sm sm:text-base">{{ day }}</span>
 
         <!-- Wedding Day Indicator -->
         <ng-container *ngIf="isWeddingDay(day)">
           <span
-            class="absolute top-2 right-2 text-gold text-2xl animate-bounce"
+            class="absolute top-0.5 lg:right-3 md:right-3 sm:right-0 text-gold text-2xl animate-bounce"
             aria-label="Wedding Day"
-            >❤️</span
+            >🤍</span
           >
         </ng-container>
       </div>
