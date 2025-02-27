@@ -15,15 +15,15 @@ export class GalleryComponent {
       alt: 'Photo of the couple at the park',
     },
     {
-      src: 'assets/images/image2.jpg',
+      src: 'assets/images/Foto2.jpg',
       alt: 'The couple on their first date',
     },
     {
-      src: 'assets/images/image3.jpg',
+      src: 'assets/images/Foto3.jpg',
       alt: 'Couple on the beach at sunset',
     },
     {
-      src: 'assets/images/image4.jpg',
+      src: 'assets/images/Foto4.jpg',
       alt: 'Proposal moment in a romantic setting',
     },
   ];
