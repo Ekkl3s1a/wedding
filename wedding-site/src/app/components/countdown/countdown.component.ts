@@ -9,7 +9,7 @@ import { Component, OnInit, OnDestroy } from '@angular/core';
   styleUrl: './countdown.component.css',
 })
 export class CountdownComponent implements OnInit {
-  weddingDate = new Date(2025, 5, 27, 0, 0, 0); // Wedding date: June 15, 2025
+  weddingDate = new Date(2025, 5, 27, 0, 0, 0);
   timeRemaining: {
     days: number;
     hours: number;

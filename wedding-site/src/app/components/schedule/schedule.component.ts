@@ -11,9 +11,19 @@ import { Component } from '@angular/core';
 export class ScheduleComponent {
   weddingSchedule = [
     {
+      time: '15:30',
+      event: 'Chegada dos convidados',
+      description: 'Horário de receção aos convidados',
+    },
+    {
       time: '16:00',
-      event: 'Cerimonia',
-      description: 'sadasdasdasdasdasdas',
-    }
+      event: 'Início da Cerimónia',
+      //description: 'O casamento vai decorrer na Herdade de Algeruz',
+    },
+    {
+      time: '18:00',
+      event: 'Cocktail & Fotografias',
+      description: 'Horário de receção aos convidados',
+    },
   ];
 }
