@@ -19,7 +19,7 @@ export class FaqComponent {
     {
       question: 'A que horas tenho de chegar?',
       answer:
-        'A cerimónia é às 16 horas, por isso pedimos-te para que estejas na herdade às 15h30. Sabemos que há atrasos que fazem parte e, por essa razão, pedimos para que venhas com tempo.',
+        'A cerimónia é às 16 horas, por isso pedimos-te para que estejas na herdade entre as 15h00 e as 15h30. Sabemos que há atrasos que fazem parte e, por essa razão, pedimos para que venhas com tempo.',
       isOpen: false,
     },
     {
