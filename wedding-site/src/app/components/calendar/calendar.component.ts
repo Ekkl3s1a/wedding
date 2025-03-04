@@ -1,11 +1,16 @@
-import { CommonModule, DatePipe } from '@angular/common';
-import { Component } from '@angular/core';
+import { CommonModule, DatePipe, registerLocaleData } from '@angular/common';
+import { Component, LOCALE_ID } from '@angular/core';
+import localePt from '@angular/common/locales/pt';
 
+registerLocaleData(localePt);
 @Component({
   selector: 'app-calendar',
   standalone: true,
   imports: [CommonModule],
-  providers: [DatePipe],
+  providers: [
+    DatePipe,
+    { provide: LOCALE_ID, useValue: 'pt-PT' }
+  ],
   templateUrl: './calendar.component.html',
   styleUrl: './calendar.component.css',
 })
@@ -13,6 +18,7 @@ export class CalendarComponent {
   weddingDate = new Date(2025, 5, 27); // Wedding Date: June 15, 2025
   selectedMonth = this.weddingDate.getMonth(); // Wedding month (0-11)
   selectedYear = this.weddingDate.getFullYear(); // Wedding year
+  daysOfWeek = ["Do", "2ª", "3ª", "4ª", "5ª", "6ª", "Sa"];
 
   constructor(private datePipe: DatePipe) {}
 
