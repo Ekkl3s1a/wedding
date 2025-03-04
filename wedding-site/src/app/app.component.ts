@@ -6,7 +6,7 @@ import { FaqComponent } from './components/faq/faq.component';
 import { GalleryComponent } from './components/gallery/gallery.component';
 import { MapComponent } from './components/map/map.component';
 import { ScheduleComponent } from './components/schedule/schedule.component';
-import { FooterComponent } from './footer/footer.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @Component({
   selector: 'app-root',
