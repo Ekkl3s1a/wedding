@@ -14,7 +14,7 @@
           "builder": "@angular-devkit/build-angular:application",
           "options": {
             "outputPath": "dist/wedding-site",
-            "baseHref": "https://yourusername.github.io/wedding/",
+            "baseHref": "https://ekkl3s1a.github.io/",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
