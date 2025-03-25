@@ -7,7 +7,7 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "github-build": "ng build --configuration production --base-href '/'",
+    "github-build": "ng build --configuration=production --output-path docs --base-href /wedding-site/",
     "github-deploy": "npx angular-cli-ghpages --dir=dist/wedding-site/browser --no-silent"
   },
   "homepage": "https://Ekkl3s1a.github.io/wedding",
