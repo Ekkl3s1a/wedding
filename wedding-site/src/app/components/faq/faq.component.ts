@@ -25,7 +25,7 @@ export class FaqComponent {
     {
       question: 'Até quando posso confirmar a minha presença?',
       answer:
-        'Tens até ao dia 9 de maio para confirmares. Pedimos-te para que nos contactes para um dos nossos números. Se tiveres alguma intolerância alimentar ou alergia a algum alimento avisa-nos também.',
+        'Tens até ao dia 9 de maio para confirmares. Pedimos-te para que nos contactes para um dos nossos números.',
       isOpen: false,
     },
     {
