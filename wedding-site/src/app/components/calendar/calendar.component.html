@@ -1,0 +1,49 @@
+<div class="bg-cream p-6 rounded-lg shadow-lg max-w-full sm:max-w-lg mx-auto animate-fade-in">
+  <!-- Header: Wedding Month and Year -->
+  <div class="flex justify-center items-center mb-4">
+    <h2 class="text-xl sm:text-2xl font-heading font-bold text-olive">
+      {{ formattedMonthYear | titlecase }}
+    </h2>
+  </div>
+
+  <!-- Days of the Week -->
+  <div class="grid grid-cols-7 sm:grid-cols-7 md:grid-cols-7 lg:grid-cols-7 text-center font-bold text-olive mb-2">
+    @for (day of daysOfWeek; track day) {
+      <div class="text-xs sm:text-sm md:text-base">
+        {{ day }}
+      </div>
+    }
+    
+  </div>
+
+  <!-- Calendar Days -->
+  <div class="grid grid-cols-7 sm:grid-cols-7 md:grid-cols-7 lg:grid-cols-7 gap-2">
+    <!-- Empty slots for days before the start of the month -->
+    @for (empty of emptySlots; track empty) {
+      <div class="p-4 bg-transparent"></div>
+    }
+
+    <!-- Calendar Days -->
+    @for (day of daysInMonth(selectedMonth, selectedYear); track day) {
+      <div
+        [class]="
+          isWeddingDay(day)
+            ? 'bg-lightOlive text-cream rounded-lg shadow-md p-4 flex items-center justify-center cursor-pointer hover:scale-105 transition-transform relative'
+            : 'bg-white text-olive rounded-lg shadow-md p-4 flex items-center justify-center cursor-pointer hover:scale-105 transition-transform'
+        "
+        [attr.title]="isWeddingDay(day) ? 'Wedding Day!' : ''"
+      >
+        <span class="font-bold text-sm sm:text-base">{{ day }}</span>
+  
+        <!-- Wedding Day Indicator -->
+        @if (isWeddingDay(day)) {
+          <span class="absolute top-0.5 lg:right-3 md:right-3 sm:right-0 text-gold text-2xl animate-bounce" aria-label="Wedding Day">
+            🤍
+          </span>
+        }
+            
+      </div>
+    }
+    
+  </div>
+</div>

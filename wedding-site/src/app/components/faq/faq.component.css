@@ -1,0 +1,64 @@
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.bg-cream {
+  background-color: #fdf5e6;
+}
+
+.bg-lightOlive {
+  background-color: #8a9a5b;
+}
+
+.text-olive {
+  color: #6b8e23;
+}
+
+.text-cream {
+  color: #fdf5e6;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+}
+
+.text-base {
+  font-size: 1rem;
+}
+
+.font-heading {
+  font-family: "Playfair Display", serif;
+}
+
+.sm\:text-xl {
+  font-size: 1.25rem;
+}
+
+.sm\:text-2xl {
+  font-size: 1.5rem;
+}
+
+.hover\:scale-105:hover {
+  transform: scale(1.05);
+}
+
+.transition-all {
+  transition: all 0.3s ease;
+}

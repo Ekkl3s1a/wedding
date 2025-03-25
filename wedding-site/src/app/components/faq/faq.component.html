@@ -1,0 +1,59 @@
+<div class="bg-cream p-6 sm:p-8 rounded-lg shadow-lg max-w-3xl mx-auto animate-fade-in">
+  <!-- Title -->
+  <h2 class="text-3xl sm:text-4xl font-heading font-bold text-olive text-center mb-8">
+    Dúvidas
+  </h2>
+
+  <!-- FAQ List -->
+  <div class="space-y-4">
+    @for (faq of faqs; track faq;let i = $index) {
+      <div class="bg-white rounded-lg shadow-md hover:shadow-lg transition duration-300">
+        <div class="flex justify-between items-center p-4 cursor-pointer hover:bg-lightOlive transition duration-300"
+          (click)="toggleAnswer(i)"
+        >
+          <h3 class="text-xl sm:text-2xl font-heading text-olive">{{ faq.question }}</h3>
+          @if (faq.isOpen) {
+            <svg
+              class="w-6 h-6 text-olive"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+              />
+            </svg>
+          }
+  
+          @if (!faq.isOpen) {
+            <svg
+              class="w-6 h-6 text-olive"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 15l-7-7-7 7"
+              />
+            </svg>
+          }
+        </div>
+  
+        <!-- Answer Section -->
+        @if (faq.isOpen) {
+          <div class="p-4 text-lg sm:text-xl font-body text-gray-700 transition-all duration-300">
+            {{ faq.answer }}
+          </div>
+        }
+      </div>
+    }
+  </div>
+</div>

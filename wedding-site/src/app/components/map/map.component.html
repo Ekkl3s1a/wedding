@@ -1,0 +1,19 @@
+<div class="flex flex-col items-center bg-cream p-6 sm:p-8 rounded-lg shadow-lg animate-fade-in">
+  <!-- Title -->
+  <h2 class="text-2xl sm:text-3xl font-heading text-olive text-center leading-tight">
+    Encontra-nos aqui
+  </h2>
+
+  <!-- Description -->
+  <p class="text-center text-lg sm:text-xl text-olive mt-4 px-4 sm:px-0">
+    Junta-te a nós na <span class="font-bold">{{ venueName }}</span>. Clica no botão para obter a localização.
+  </p>
+
+  <a
+    [href]="googleMapsUrl"
+    target="_blank"
+    class="bg-gold text-cream px-6 py-3 mt-6 rounded-lg shadow-md hover:bg-lightOlive hover:scale-105 transition-all"
+  >
+    Obter direção
+  </a>
+</div>
