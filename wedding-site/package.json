@@ -10,6 +10,7 @@
     "github-build": "ng build --configuration production --base-href '/wedding/'",
     "github-deploy": "npx angular-cli-ghpages --dir=dist/wedding-site/browser --no-silent"
   },
+  "homepage": "https://Ekkl3s1a.github.io/wedding",
   "private": true,
   "dependencies": {
     "@angular/animations": "^19.1.0",
