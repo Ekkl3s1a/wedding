@@ -20,10 +20,10 @@ export class ScheduleComponent {
       event: 'Início da Cerimónia',
       //description: 'O casamento vai decorrer na Herdade de Algeruz',
     },
-    {
+    /*{
       time: '18:00',
       event: 'Cocktail & Fotografias',
       //description: 'Horário de receção aos convidados',
-    },
+    },*/
   ];
 }
