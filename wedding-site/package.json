@@ -8,7 +8,8 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "github-build": "ng build --configuration=production --base-href /wedding-site/",
-    "github-deploy": "npx angular-cli-ghpages --dir=dist/wedding-site/browser --no-silent"
+    "github-deploy": "npx angular-cli-ghpages --dir=dist/wedding-site/browser --no-silent",
+    "build-and-deploy-gh-pages": "ng build --prod --base-href 'https://Ekkl3s1a.github.io/wedding' && npx ngh --dir dist/wedding-site"
   },
   "homepage": "https://Ekkl3s1a.github.io/wedding",
   "private": true,
