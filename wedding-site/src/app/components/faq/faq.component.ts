@@ -37,7 +37,7 @@ export class FaqComponent {
     {
       question: 'E presentes ? Como posso ajudar?',
       answer:
-        'Se quiseres dar dinheiro podes enviar para um dos nossos contactos ou se preferires entregas no dia.',
+        'Não precisamos de prendas mas, se quiseres contribuir, dias antes do casamento vamos disponibilizar o nosso número de conta.',
       isOpen: false,
     },
     {
