@@ -1,27 +1,27 @@
-<div class="p-6 rounded-lg shadow-lg max-w-full sm:max-w-3xl mx-auto animate-fade-in">
-  <h2 class="text-3xl sm:text-4xl font-heading font-bold text-olive text-center mb-8">
+<div class="p-4 sm:p-6 lg:p-8 rounded-lg shadow-lg max-w-full sm:max-w-3xl lg:max-w-4xl mx-auto animate-fade-in">
+  <h2 class="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-olive text-center mb-6 sm:mb-8">
     Programa
   </h2>
 
   <!-- Schedule List -->
-  <div class="space-y-6">
+  <div class="space-y-4 sm:space-y-6">
     @for (event of weddingSchedule;track event; let i = $index) {
-      <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transform hover:scale-105 transition duration-300 animate-slide-up">
-        <div class="flex items-center justify-between sm:space-x-6 mb-4">
+      <div class="bg-white p-4 sm:p-6 lg:p-8 rounded-lg shadow-md hover:shadow-xl transform hover:scale-105 transition duration-300 animate-slide-up">
+        <div class="flex flex-col sm:flex-row items-center justify-between sm:space-x-6 mb-4">
           <!-- Event Time -->
-          <div class="text-2xl sm:text-3xl font-bold text-olive">
+          <div class="text-xl sm:text-2xl lg:text-3xl font-bold text-olive text-center sm:text-left">
             {{ event.time }}
           </div>
-          <div class="h-1 sm:w-12 w-8 bg-olive"></div>
+          <div class="h-1 w-8 sm:w-12 lg:w-16 bg-olive mt-2 sm:mt-0"></div>
         </div>
 
         <!-- Event Title -->
-        <h3 class="text-xl sm:text-2xl font-heading font-semibold text-olive mb-2">
+        <h3 class="text-lg sm:text-xl lg:text-2xl font-heading font-semibold text-olive mb-2 text-center sm:text-left">
           {{ event.event }}
         </h3>
 
         <!-- Event Description -->
-        <!-- <p class="text-lg font-body text-gray-700">{{ event.description }}</p> -->
+        <!-- <p class="text-base sm:text-lg lg:text-xl font-body text-gray-700 text-center sm:text-left">{{ event.description }}</p> -->
       </div>
     }
   </div>
