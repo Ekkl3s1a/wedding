@@ -34,12 +34,14 @@ export class FaqComponent {
         'Se tiveres alguma intolerância alimentar ou alergia a algum alimento avisa-nos.',
       isOpen: false,
     },
+    /*
     {
       question: 'E presentes ? Como posso ajudar?',
       answer:
         'Não precisamos de prendas mas, se quiseres contribuir, dias antes do casamento vamos disponibilizar o nosso número de conta.',
       isOpen: false,
     },
+    */
     {
       question: 'Existe estacionamento disponível?',
       answer: 'Sim, há estacionamento gratuito no local do evento.',
