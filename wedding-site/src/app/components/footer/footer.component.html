@@ -1,29 +1,29 @@
-<footer class="bg-hero-gradient-to-top text-cream py-12 mt-16">
+<footer class="bg-hero-gradient-to-top text-cream py-8 sm:py-12 mt-16">
   <!-- Footer Content Container -->
-  <div class="max-w-6xl mx-auto px-6">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
     <!-- Contact Information -->
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 mb-6 sm:mb-8">
       <!-- Bride's Info -->
-      <div class="text-center md:text-center">
-        <h3 class="text-2xl font-heading font-bold mb-4">
+      <div class="text-center">
+        <h3 class="text-xl sm:text-2xl font-heading font-bold mb-3 sm:mb-4">
           Noiva: {{ brideContact.name }}
         </h3>
-        <p class="text-sm md:text-base">
+        <p class="text-sm sm:text-base">
           Contacto:
-          <a [href]="'tel:' + brideContact.phone" class="text-blush">{{
+          <a [href]="'tel:' + brideContact.phone" class="text-blush hover:text-gold transition">{{
             brideContact.phone
           }}</a>
         </p>
       </div>
 
       <!-- Groom's Info -->
-      <div class="text-center md:text-center">
-        <h3 class="text-2xl font-heading font-bold mb-4">
+      <div class="text-center">
+        <h3 class="text-xl sm:text-2xl font-heading font-bold mb-3 sm:mb-4">
           Noivo: {{ groomContact.name }}
         </h3>
-        <p class="text-sm md:text-base">
+        <p class="text-sm sm:text-base">
           Contacto:
-          <a [href]="'tel:' + groomContact.phone" class="text-blush">{{
+          <a [href]="'tel:' + groomContact.phone" class="text-blush hover:text-gold transition">{{
             groomContact.phone
           }}</a>
         </p>
@@ -31,11 +31,11 @@
     </div>
 
     <!-- Social Media Links -->
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 mb-6 sm:mb-8">
       <!-- Bride's Social Media -->
       <div class="text-center">
-        <h4 class="text-lg font-bold mb-2">Redes Sociais da Noiva</h4>
-        <div class="flex justify-center space-x-6">
+        <h4 class="text-lg sm:text-xl font-bold mb-2">Redes Sociais da Noiva</h4>
+        <div class="flex justify-center space-x-4 sm:space-x-6">
           <a
             *ngFor="let social of brideContact.social"
             [href]="social.url"
@@ -43,7 +43,7 @@
             target="_blank"
             rel="noopener noreferrer"
           >
-            <i class="fab fa-{{ social.icon }} fa-2x"></i>
+            <i class="fab fa-{{ social.icon }} fa-lg sm:fa-2x"></i>
             <!-- FontAwesome icon -->
           </a>
         </div>
@@ -51,8 +51,8 @@
 
       <!-- Groom's Social Media -->
       <div class="text-center">
-        <h4 class="text-lg font-bold mb-2">Redes Sociais do Noivo</h4>
-        <div class="flex justify-center space-x-6">
+        <h4 class="text-lg sm:text-xl font-bold mb-2">Redes Sociais do Noivo</h4>
+        <div class="flex justify-center space-x-4 sm:space-x-6">
           <a
             *ngFor="let social of groomContact.social"
             [href]="social.url"
@@ -60,7 +60,7 @@
             target="_blank"
             rel="noopener noreferrer"
           >
-            <i class="fab fa-{{ social.icon }} fa-2x"></i>
+            <i class="fab fa-{{ social.icon }} fa-lg sm:fa-2x"></i>
             <!-- FontAwesome icon -->
           </a>
         </div>
@@ -68,7 +68,7 @@
     </div>
 
     <!-- Copyright Information -->
-    <div class="text-center text-sm mt-8">
+    <div class="text-center text-xs sm:text-sm mt-6 sm:mt-8">
       <p>
         &copy; 2025 Wedding of {{ brideContact.name }} and
         {{ groomContact.name }}. All Rights Reserved.
